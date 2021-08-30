@@ -15,6 +15,7 @@ const Header = ({ siteTitle }) => (
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
+      class="nav-items"
     >
       <h1 style={{ margin: 0 }}>
         <Link
@@ -27,6 +28,23 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+
+      <div class="nav-links">
+        
+         <h4 style={{ margin: 0}} class="home">
+          <Link to="/" style={{color:'white', textDecoration: 'none'}}>Home</Link>
+        </h4>
+
+        <h4 style={{ margin: 0}} class="page2">
+          <Link to="/page-2/" style={{color:'white', textDecoration: 'none'}}>Page2</Link>
+        </h4>
+
+        <h4 style={{ margin: 0}} class="typescript">
+          <Link to="/using-typescript/" style={{color:'white', textDecoration: 'none'}}>TypeScript</Link>
+        </h4>
+
+      </div>
+
     </div>
   </header>
 )
